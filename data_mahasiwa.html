@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Peserta</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #f4f8ff; 
+            margin: 30px;
+        } 
+        h1 { 
+            color: #1a56b0; 
+            text-align: center; 
+        } 
+        .form-container, .table-container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+        }
+        table { 
+            border-collapse: collapse; 
+            width: 100%; 
+            margin-top: 10px; 
+        } 
+        th { 
+            background: #1a56b0; 
+            color: white; 
+            padding: 8px; 
+            text-align: left; 
+        } 
+        td { 
+            border: 1px solid #ccd; 
+            padding: 8px; 
+        } 
+        
+        /* Kelas .aktif tetap biru muda */
+        .aktif { background: #e6eefb; } 
+        
+        /* KELAS BARU: untuk warna kuning */
+        .highlight-kuning { background-color: yellow; font-weight: bold; } 
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pendaftaran Peserta</h1>
+
+        <!-- Komentar: Bagian Form Pendaftaran sesuai modul -->
+        <div class="form-container">
+            <form>
+                <div style="margin-bottom: 10px;">
+                    <label>Nama:</label>
+                    <input type="text" value="Budi Santoso" style="width: 70%; padding: 5px;">
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <label>Jenis Kelamin:</label>
+                    <input type="radio" name="jk" checked> L 
+                    <input type="radio" name="jk" style="margin-left: 10px;"> P
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <label>Jurusan:</label>
+                    <select style="padding: 5px;">
+                        <option>Informatika</option>
+                        <option>Sistem Informasi</option>
+                    </select>
+                </div>
+                <button type="submit" style="background: #1a56b0; color: white; border: none; padding: 6px 15px; border-radius: 4px; cursor: pointer;">Kirim</button>
+            </form>
+        </div>
+
+        <!-- Komentar: Bagian Tabel Peserta -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>NIM</th>
+                        <th>Nama</th>
+                        <th>Prodi</th>
+                        <th>IPK</th>
+                    </tr>
+                </thead>
+                <tbody id="daftarPeserta">
+                    <tr>
+                        <td>252520055</td>
+                        <td>Budi Santoso</td>
+                        <td>Informatika</td>
+                        <td>3.75</td>
+                    </tr>
+                    <tr>
+                        <td>252520070</td>
+                        <td>Sari</td>
+                        <td>Sipil</td>
+                        <td>3.60</td>
+                    </tr>
+                    <tr>
+                        <td>252520010</td>
+                        <td>Takim</td>
+                        <td>Manajemen</td>
+                        <td>3.84</td>
+                    </tr>
+                    <!-- BARIS AHMato DIUBAH JADI CLASS="highlight-kuning  biar berbeda" -->
+                    <tr class="highlight-kuning">
+                        <td>252520030</td>
+                        <td>Ahmato</td>
+                        <td>Pendidikan Bahasa Inggris</td>
+                        <td>3.85</td>
+                    </tr>
+                    <tr>
+                        <td>252520040</td>
+                        <td>Ahman</td>
+                        <td>PGSD</td>
+                        <td>3.90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
