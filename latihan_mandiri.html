@@ -1,0 +1,48 @@
+<DOCTYPE>
+<HTML lang="id">
+<head>
+    <h1>Data Mahasiswa</h1>
+    <h2>Formulir Mahasiswa</h2>
+<form action="proses.php"method="post">
+    <!--Elemen 1: text-->
+    Nama:<input type="text"name="nama"><br>
+    <!--Elemen 2: email-->
+    Email:<input type="email"name="email"><br>
+    <!--Elemen 3: radio-->
+    Jenis Kelamin:
+    <input type="radio"name="jk"value="L">Laki-laki
+    <input type="radio"name="jk"value="P">Perempuan<br>
+    <!--Elemen 4: checkbox-->
+    Hobi:
+    <input type="checkbox"name="hobi"value="baca">Membaca
+    <input type="checkbox"name="hobi"value="musik">Musik
+    <input type="checkbox"name="hobi"value="gambar">Menggambar
+    <input type="checkbox"name="hobi"value="nonton">Menonton<br>
+    Device yang sering di pakai:
+    <input type="checkbox"name="Device yang sering di pakai"value="hp">Ponsel
+    <input type="checkbox"name="Device yang sering di pakai"value="tab">Tablet
+    <input type="checkbox"name="Device yang sering di pakai"value="dekstop">Komputer
+    <input type="checkbox"name="Device yang sering di pakai"value="tv">TV<br>
+    <!--Elemen 5: select-->
+    <div>
+        <label>Jurusan:</label>
+        <select name="jurusan">
+        <option value="Informatika">Informatika</option>
+        <option value="sipil">Teknik Sipil</option>
+        </select>
+    </div>
+    <!--Elemen 6: textarea-->
+    <div>
+     <label>Alamat:</label><br>
+        <textarea name="alamat" rows="4" cols="30"></textarea>
+    </div>
+
+    <button type="submit">Kirim</button>
+    <button type="reset">Reset</button>
+
+    <!--Css: mewarnai data mahasiswa-->
+    <style>
+        body { font-family: Arial; background: #f4f8ff; } 
+            h1 { color: #1a56b0; text-align: center; } 
+    </style>
+</form>
